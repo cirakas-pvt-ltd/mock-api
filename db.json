@@ -10,6 +10,12 @@
     "message": "User not registered",
     "transactionId": "txn_check_1234567890"
   },
+  "checkUserMobileRegistered": {
+    "status": true,
+    "isRegistered": true,
+    "message": "User already registered",
+    "transactionId": "txn_check_registered_1234567890"
+  },
   "verifyOtp": {
     "status": true,
     "access_token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxMjM0NTY3ODkwIiwibmFtZSI6IkpvaG4gRG9lIiwiaWF0IjoxNTE2MjM5MDIyfQ.SflKxwRJSMeKKF2QT4fwpMeJf36POk6yJV_adQssw5c",
