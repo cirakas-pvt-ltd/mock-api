@@ -1,0 +1,313 @@
+{
+  "otp": {
+    "status": true,
+    "message": "OTP sent successfully",
+    "transactionId": "txn_1234567890"
+  },
+  "checkUserMobile": {
+    "status": true,
+    "isRegistered": false,
+    "message": "User not registered",
+    "transactionId": "txn_check_1234567890"
+  },
+  "verifyOtp": {
+    "status": true,
+    "access_token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxMjM0NTY3ODkwIiwibmFtZSI6IkpvaG4gRG9lIiwiaWF0IjoxNTE2MjM5MDIyfQ.SflKxwRJSMeKKF2QT4fwpMeJf36POk6yJV_adQssw5c",
+    "refresh_token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxMjM0NTY3ODkwIiwibmFtZSI6IkpvaG4gRG9lIiwiaWF0IjoxNTE2MjM5MDIyfQ.SflKxwRJSMeKKF2QT4fwpMeJf36POk6yJV_adQssw5c",
+    "token_type": "Bearer",
+    "expires_in": 3600,
+    "last_level": "home",
+    "customer_id": "cust_1234567890",
+    "vendor": "cirakas",
+    "event": "login",
+    "private_key": "private_key_1234567890",
+    "message": "OTP verified successfully"
+  },
+  "refreshToken": {
+    "status": true,
+    "access_token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxMjM0NTY3ODkwIiwibmFtZSI6IkpvaG4gRG9lIiwiaWF0IjoxNTE2MjM5MDIyfQ.SflKxwRJSMeKKF2QT4fwpMeJf36POk6yJV_adQssw5c",
+    "refresh_token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxMjM0NTY3ODkwIiwibmFtZSI6IkpvaG4gRG9lIiwiaWF0IjoxNTE2MjM5MDIyfQ.SflKxwRJSMeKKF2QT4fwpMeJf36POk6yJV_adQssw5c",
+    "token_type": "Bearer",
+    "expires_in": 3600
+  },
+  "users": [
+    {
+      "id": "cust_1234567890",
+      "customer_id": "cust_1234567890",
+      "name": "John Doe",
+      "mobile_number": "+919876543210",
+      "email": "john.doe@example.com",
+      "is_registered": true,
+      "userType": "CONSUMER",
+      "created_at": "2025-01-15T10:00:00Z",
+      "updated_at": "2025-01-15T10:00:00Z"
+    },
+    {
+      "id": "cust_0987654321",
+      "customer_id": "cust_0987654321",
+      "name": "Jane Smith",
+      "mobile_number": "+919876543211",
+      "email": "jane.smith@example.com",
+      "is_registered": true,
+      "userType": "CONSUMER",
+      "created_at": "2025-01-14T10:00:00Z",
+      "updated_at": "2025-01-14T10:00:00Z"
+    }
+  ],
+  "addresses": [
+    {
+      "id": 1,
+      "addressId": 1,
+      "address1": "123 Main Street",
+      "street": "Main Street",
+      "city": "Kochi",
+      "state": "Kerala",
+      "country": "India",
+      "pinCode": "682001",
+      "latitude": "9.9312",
+      "longitude": "76.2673",
+      "landMark": "Near Metro Station",
+      "addressType": "HOME",
+      "mobileNumber": "+919876543210",
+      "email": "john.doe@example.com",
+      "district": "Ernakulam"
+    },
+    {
+      "id": 2,
+      "addressId": 2,
+      "address1": "456 Park Avenue",
+      "street": "Park Avenue",
+      "city": "Thiruvananthapuram",
+      "state": "Kerala",
+      "country": "India",
+      "pinCode": "695001",
+      "latitude": "8.5241",
+      "longitude": "76.9366",
+      "landMark": "Near Bus Stand",
+      "addressType": "WORK",
+      "mobileNumber": "+919876543210",
+      "email": "john.doe@example.com",
+      "district": "Thiruvananthapuram"
+    }
+  ],
+  "merchants": [
+    {
+      "id": "merchant_001",
+      "merchant_id": "merchant_001",
+      "name": "Fresh Grocery Store",
+      "business_name": "Fresh Grocery Store",
+      "business_area": "GROCERY",
+      "latitude": 9.9312,
+      "longitude": 76.2673,
+      "address": "123 Commercial Street, Kochi",
+      "city": "Kochi",
+      "state": "Kerala",
+      "phone": "+919876543220",
+      "email": "freshgrocery@example.com",
+      "rating": 4.5,
+      "is_active": true,
+      "delivery_charge": 50,
+      "minimum_order": 200
+    },
+    {
+      "id": "merchant_002",
+      "merchant_id": "merchant_002",
+      "name": "Quick Restaurant",
+      "business_name": "Quick Restaurant",
+      "business_area": "RESTAURANT",
+      "latitude": 9.9412,
+      "longitude": 76.2773,
+      "address": "456 Food Street, Kochi",
+      "city": "Kochi",
+      "state": "Kerala",
+      "phone": "+919876543221",
+      "email": "quickrestaurant@example.com",
+      "rating": 4.8,
+      "is_active": true,
+      "delivery_charge": 30,
+      "minimum_order": 150
+    }
+  ],
+  "products": [
+    {
+      "id": "prod_001",
+      "product_id": "prod_001",
+      "merchant_id": "merchant_001",
+      "name": "Fresh Tomatoes",
+      "description": "Fresh red tomatoes, 1kg",
+      "price": 50,
+      "discounted_price": 45,
+      "category": "Vegetables",
+      "image_url": "https://via.placeholder.com/300",
+      "stock": 100,
+      "is_available": true,
+      "rating": 4.2
+    },
+    {
+      "id": "prod_002",
+      "product_id": "prod_002",
+      "merchant_id": "merchant_001",
+      "name": "Organic Potatoes",
+      "description": "Organic potatoes, 2kg",
+      "price": 80,
+      "discounted_price": 75,
+      "category": "Vegetables",
+      "image_url": "https://via.placeholder.com/300",
+      "stock": 50,
+      "is_available": true,
+      "rating": 4.5
+    },
+    {
+      "id": "prod_003",
+      "product_id": "prod_003",
+      "merchant_id": "merchant_002",
+      "name": "Chicken Biryani",
+      "description": "Delicious chicken biryani with raita",
+      "price": 250,
+      "discounted_price": 225,
+      "category": "Main Course",
+      "image_url": "https://via.placeholder.com/300",
+      "stock": 20,
+      "is_available": true,
+      "rating": 4.8
+    }
+  ],
+  "promoCodes": [
+    {
+      "id": "promo_001",
+      "pid": "promo_001",
+      "code": "WELCOME10",
+      "name": "Welcome Offer",
+      "description": "Get 10% off on your first order",
+      "promotion_description": "Use code WELCOME10 to get 10% discount",
+      "promotion_type": "PERCENTAGE",
+      "discount_percent": 10,
+      "discount_amount": 0,
+      "min_cart": 500,
+      "minimum_cart_amount": 500,
+      "max_capped_price": 100,
+      "merchant_id": "merchant_001",
+      "applicable_product": "ALL",
+      "business_area": "GROCERY",
+      "start_time": "2025-01-01T00:00:00Z",
+      "endTime": "2025-12-31T23:59:59Z",
+      "is_available": true,
+      "is_code_required": true,
+      "quantity": 1000,
+      "max_use": 1,
+      "status": "ACTIVE",
+      "record_status": 1,
+      "owner": "ADMIN",
+      "claimOwner": "CONSUMER"
+    },
+    {
+      "id": "promo_002",
+      "pid": "promo_002",
+      "code": "FLAT50",
+      "name": "Flat 50 Off",
+      "description": "Get flat ₹50 off on orders above ₹500",
+      "promotion_description": "Use code FLAT50 to get ₹50 discount",
+      "promotion_type": "FIXED",
+      "discount_percent": 0,
+      "discount_amount": 50,
+      "min_cart": 500,
+      "minimum_cart_amount": 500,
+      "max_capped_price": 50,
+      "merchant_id": "merchant_002",
+      "applicable_product": "ALL",
+      "business_area": "RESTAURANT",
+      "start_time": "2025-01-01T00:00:00Z",
+      "endTime": "2025-12-31T23:59:59Z",
+      "is_available": true,
+      "is_code_required": true,
+      "quantity": 500,
+      "max_use": 1,
+      "status": "ACTIVE",
+      "record_status": 1,
+      "owner": "ADMIN",
+      "claimOwner": "CONSUMER"
+    }
+  ],
+  "orders": [
+    {
+      "id": "order_001",
+      "order_id": "order_001",
+      "customer_id": "cust_1234567890",
+      "merchant_id": "merchant_001",
+      "status": "PENDING",
+      "total_amount": 500,
+      "discount_amount": 50,
+      "delivery_charge": 50,
+      "final_amount": 500,
+      "payment_status": "PENDING",
+      "payment_method": "COD",
+      "delivery_address": {
+        "addressId": 1,
+        "address1": "123 Main Street",
+        "city": "Kochi",
+        "state": "Kerala"
+      },
+      "items": [
+        {
+          "product_id": "prod_001",
+          "name": "Fresh Tomatoes",
+          "quantity": 2,
+          "price": 50,
+          "total": 100
+        },
+        {
+          "product_id": "prod_002",
+          "name": "Organic Potatoes",
+          "quantity": 5,
+          "price": 80,
+          "total": 400
+        }
+      ],
+      "created_at": "2025-01-15T10:00:00Z",
+      "updated_at": "2025-01-15T10:00:00Z"
+    }
+  ],
+  "platformData": [
+    {
+      "id": 1,
+      "name": "APP_VERSION",
+      "value": "1.0.0",
+      "createdOn": "2025-01-01T00:00:00Z",
+      "recordStatus": 1
+    },
+    {
+      "id": 2,
+      "name": "MIN_ORDER_AMOUNT",
+      "value": "100",
+      "createdOn": "2025-01-01T00:00:00Z",
+      "recordStatus": 1
+    },
+    {
+      "id": 3,
+      "name": "DELIVERY_CHARGE",
+      "value": "50",
+      "createdOn": "2025-01-01T00:00:00Z",
+      "recordStatus": 1
+    }
+  ],
+  "searchSuggestions": [
+    {
+      "id": 1,
+      "name": "Tomatoes",
+      "type": "PRODUCT",
+      "merchant_id": "merchant_001"
+    },
+    {
+      "id": 2,
+      "name": "Potatoes",
+      "type": "PRODUCT",
+      "merchant_id": "merchant_001"
+    },
+    {
+      "id": 3,
+      "name": "Biryani",
+      "type": "PRODUCT",
+      "merchant_id": "merchant_002"
+    }
+  ]
+}
